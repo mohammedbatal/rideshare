@@ -5,13 +5,13 @@ class AppStrings {
   static const String skip = 'Skip';
   static const String onboarding01Title = 'Anywhere you are';
   static const String onboarding01Content =
-      'Sell houses easily with the help of Listenoryx and to make this line big I am writing more.';
+      'Sell houses easily with the help of\nListenoryx and to make this line big\nI am writing more.';
   static const String onboarding02Title = 'At anytime';
   static const String onboarding02Content =
-      'Sell houses easily with the help of Listenoryx and to make this line big I am writing more.';
+      'Sell houses easily with the help of\nListenoryx and to make this line big\nI am writing more.';
   static const String onboarding03Title = 'Book your car';
   static const String onboarding03Content =
-      'Sell houses easily with the help of Listenoryx and to make this line big I am writing more.';
+      'Sell houses easily with the help of\nListenoryx and to make this line big\nI am writing more.';
   //enableLocation
   static const String Enableyourlocation = 'Enable your location';
   static const String Chooseyourlocationtostart =

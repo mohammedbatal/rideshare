@@ -7,5 +7,6 @@ class AppColors {
   static const errorColor = Color.fromRGBO(244, 67, 54, 1);
   static const hintTextFormColor = Color.fromRGBO(208, 208, 208, 1);
   static const griyColor = Color.fromRGBO(160, 160, 160, 1);
+  static const griyColortitle = Color.fromRGBO(65, 65, 65, 1);
   static const blueColor = Color.fromRGBO(48, 79, 254, 1);
 }
