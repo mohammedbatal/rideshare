@@ -10,5 +10,5 @@ class AppAssets {
   static const String bike = '${path}bike';
   static const String cycle = '${path}cycle';
   static const String profile = '${path}profile';
-  static const String welcome = '${path}welcome';
+  static const String welcome = '${path}welcome.png';
 }

@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:rideshare/resources/static_onboarding.dart';
+import 'package:rideshare/view/screen/auth/login.dart';
 
 abstract class OnboardingController extends GetxController {
   next();
@@ -12,9 +14,12 @@ class OnboardingControllerImp extends OnboardingController {
   @override
   next() {
     currentPage++;
-    pageController.animateToPage(currentPage,
-        duration: Duration(milliseconds: 900), curve: Curves.easeInOut);
-    print('mohammed');
+    if (currentPage > onboardingList.length - 1) {
+      Get.to(Login());
+    } else {
+      pageController.animateToPage(currentPage,
+          duration: const Duration(milliseconds: 900), curve: Curves.easeInOut);
+    }
   }
 
   @override

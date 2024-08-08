@@ -29,7 +29,7 @@ class Onboarding extends StatelessWidget {
                     itemCount: onboardingList.length,
                     itemBuilder: (context, index) => Column(
                           children: [
-                            const SizedBox(height: 100),
+                            const SizedBox(height: 10),
                             Image.asset(
                               onboardingList[index].image!,
                             ),
@@ -78,7 +78,7 @@ class Onboarding extends StatelessWidget {
                   ],
                 ),
               ),
-              const SizedBox(height: 50),
+              const SizedBox(height: 20),
               GetBuilder<OnboardingControllerImp>(
                 init: OnboardingControllerImp(),
                 builder: (controller) => Container(
@@ -99,7 +99,7 @@ class Onboarding extends StatelessWidget {
                   ),
                 ),
               ),
-              const SizedBox(height: 60),
+              const SizedBox(height: 20),
             ],
           ))
         ],

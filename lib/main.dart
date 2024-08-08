@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:rideshare/view/screen/onboarding.dart';
+import 'package:rideshare/view/screen/onboarding/onboarding.dart';
 
 void main() {
   runApp(const MyApp());
