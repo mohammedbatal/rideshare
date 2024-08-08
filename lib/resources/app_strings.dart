@@ -3,6 +3,7 @@
 class AppStrings {
   // Onboarding
   static const String skip = 'Skip';
+  static const String or = 'or';
   static const String onboarding01Title = 'Anywhere you are';
   static const String onboarding01Content =
       'Sell houses easily with the help of\nListenoryx and to make this line big\nI am writing more.';
@@ -30,8 +31,9 @@ class AppStrings {
   static const String Signupwithyouremail =
       'Sign up with your email or phone number';
   static const String Bysigningup =
-      'By signing up. you agree to the Terms of service and Privacy policy.';
+      'By signing up. you agree to the Terms of service\nand Privacy policy.';
   static const String SignUp = 'Sign Up';
+  static const String Signin = 'Sign in';
   static const String Name = 'Name';
   static const String Email = 'Email';
   static const String Yourmobilenumber = 'Your mobile number';

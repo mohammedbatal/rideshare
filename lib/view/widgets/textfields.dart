@@ -1,6 +1,6 @@
-
 import 'package:flutter/material.dart';
-
+import 'package:rideshare/resources/app_assets.dart';
+import 'package:rideshare/resources/app_colors.dart';
 
 abstract class CustomTextField extends StatelessWidget {
   final TextEditingController controller;
@@ -34,6 +34,7 @@ class PrimaryTextField extends CustomTextField {
       controller: controller,
       decoration: InputDecoration(
         hintText: hintText,
+        hintStyle: TextStyle(color: AppColors.griyColor),
         filled: true,
         fillColor: Colors.white,
         border: OutlineInputBorder(
@@ -69,7 +70,8 @@ class PhoneNumberField extends StatelessWidget {
   final List<String> countryCodes;
   final String initialCountryCode;
 
-  PhoneNumberField({
+  const PhoneNumberField({
+    super.key,
     required this.controller,
     required this.hintText,
     required this.countryCodes,
@@ -82,13 +84,13 @@ class PhoneNumberField extends StatelessWidget {
 
     return Container(
       decoration: BoxDecoration(
-        border: Border.all(color: Color(0xffD0D0D0), width: 1.5),
+        border: Border.all(color: const Color(0xffD0D0D0), width: 1.5),
         borderRadius: BorderRadius.circular(8),
       ),
       child: Row(
         children: <Widget>[
           Container(
-            padding: EdgeInsets.symmetric(horizontal: 8),
+            padding: const EdgeInsets.symmetric(horizontal: 8),
             child: DropdownButton<String>(
               value: selectedCountryCode,
               onChanged: (String? newValue) {
@@ -101,14 +103,15 @@ class PhoneNumberField extends StatelessWidget {
                   value: value,
                   child: Row(
                     children: [
-                      Image.network(
-                        'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxECwgtGSw7Mt0eODEF53rZuI2TjfY40DGqA&s',
+                      // Image.network(
+                      //   'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxECwgtGSw7Mt0eODEF53rZuI2TjfY40DGqA&s',
+                      Image.asset(
+                        AppAssets.syria,
                         width: 24,
                         height: 24,
                       ),
-                      SizedBox(width: 8),
+                      const SizedBox(width: 8),
                       Text(value),
-                      
                     ],
                   ),
                 );
@@ -116,7 +119,7 @@ class PhoneNumberField extends StatelessWidget {
               underline: Container(),
             ),
           ),
-          VerticalDivider(
+          const VerticalDivider(
             color: Color(0xffD0D0D0),
             thickness: 1,
           ),
@@ -126,7 +129,7 @@ class PhoneNumberField extends StatelessWidget {
               decoration: InputDecoration(
                 hintText: hintText,
                 border: InputBorder.none,
-                contentPadding: EdgeInsets.symmetric(horizontal: 8),
+                contentPadding: const EdgeInsets.symmetric(horizontal: 8),
               ),
             ),
           ),
@@ -209,19 +212,19 @@ class _FlexibleTextFieldState extends State<FlexibleTextField> {
   }
 }
 
-
-
+// ignore: must_be_immutable
 class DropdownField extends StatelessWidget {
   final String hintText;
   final List<String> options;
-  final String? initialValue;
-  final ValueChanged<String?> onChanged;
+  String? initialValue;
+  // final ValueChanged<String?> onChanged;
 
   DropdownField({
+    super.key,
     required this.hintText,
     required this.options,
     this.initialValue,
-    required this.onChanged,
+    // required this.onChanged,
   });
 
   @override
@@ -252,7 +255,9 @@ class DropdownField extends StatelessWidget {
           ),
         ),
       ),
-      onChanged: onChanged,
+      onChanged: (val) {
+        initialValue = val;
+      },
       items: options.map<DropdownMenuItem<String>>((String value) {
         return DropdownMenuItem<String>(
           value: value,
@@ -262,8 +267,6 @@ class DropdownField extends StatelessWidget {
     );
   }
 }
-
-
 
 class CustTextField extends StatelessWidget {
   final TextEditingController controller;
@@ -275,7 +278,7 @@ class CustTextField extends StatelessWidget {
     required this.controller,
     required this.hintText,
     this.width = double.infinity,
-    this.height = 118.0, 
+    this.height = 118.0,
   });
 
   @override
@@ -301,5 +304,3 @@ class CustTextField extends StatelessWidget {
     );
   }
 }
-
-

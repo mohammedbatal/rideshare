@@ -11,4 +11,8 @@ class AppAssets {
   static const String cycle = '${path}cycle';
   static const String profile = '${path}profile';
   static const String welcome = '${path}welcome.png';
+  static const String syria = '${path}syria.png';
+  static const String gmail = '${path}Gmail.png';
+  static const String facebook = '${path}Facebook.png';
+  static const String apple = '${path}Apple.png';
 }

@@ -29,7 +29,7 @@ class PrimaryButton extends CustomButton {
     return ElevatedButton(
       style: ElevatedButton.styleFrom(
         backgroundColor: color,
-        minimumSize: Size(340, 54),
+        minimumSize: const Size(340, 54),
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(8),
         ),
@@ -126,7 +126,6 @@ class DangerButton extends CustomButton {
   Widget build(BuildContext context) {
     return ElevatedButton(
       style: ElevatedButton.styleFrom(
-         
         backgroundColor: Colors.white,
         minimumSize: Size(340, 54),
         shape: RoundedRectangleBorder(
@@ -147,13 +146,13 @@ class DangerButton extends CustomButton {
 }
 
 class DanButton extends CustomButton {
-  //final String imageUrl;
+  final String imageUrl;
 
-  DanButton({
-    required String text,
-    required VoidCallback onPressed,
-    /*required this.imageUrl*/
-  }) : super(text: text, onPressed: onPressed);
+  DanButton(
+      {required String text,
+      required VoidCallback onPressed,
+      required this.imageUrl})
+      : super(text: text, onPressed: onPressed);
 
   @override
   Widget build(BuildContext context) {
@@ -170,10 +169,11 @@ class DanButton extends CustomButton {
       child: Row(
         mainAxisSize: MainAxisSize.min,
         children: [
-          // CircleAvatar(
-          //   backgroundImage: AssetImage(imageUrl),
-          //   radius: 12,
-          // ),
+          CircleAvatar(
+            backgroundColor: Colors.white,
+            backgroundImage: AssetImage(imageUrl),
+            radius: 12,
+          ),
           SizedBox(width: 8),
           Text(
             text,
