@@ -15,6 +15,7 @@ class Signup extends StatelessWidget {
           padding: const EdgeInsets.symmetric(horizontal: 10),
           child: Column(
             children: [
+              
               const Text(AppStrings.Signupwithyouremail),
               PrimaryTextField(
                   controller: controller, hintText: 'PrimaryTextField')
