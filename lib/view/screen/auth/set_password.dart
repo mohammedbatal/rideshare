@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+import 'package:get/get_core/src/get_main.dart';
 import 'package:rideshare/resources/app_colors.dart';
 import 'package:rideshare/resources/app_strings.dart';
+import 'package:rideshare/view/screen/home/home_screen.dart';
 import 'package:rideshare/view/widgets/buttons.dart';
 import 'package:rideshare/view/widgets/textfields.dart';
 
@@ -54,7 +57,9 @@ class SetPassword extends StatelessWidget {
               const SizedBox(height: 30),
               PrimaryButton(
                   text: AppStrings.Register,
-                  onPressed: () {},
+                  onPressed: () {
+                    Get.to(HomeScreen());
+                  },
                   color: AppColors.primarycolor)
             ],
           ),
