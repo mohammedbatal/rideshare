@@ -1,7 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+import 'package:get/get_core/src/get_main.dart';
 import 'package:rideshare/resources/app_assets.dart';
 import 'package:rideshare/resources/app_colors.dart';
 import 'package:rideshare/resources/app_strings.dart';
+import 'package:rideshare/view/screen/auth/set_password.dart';
 import 'package:rideshare/view/widgets/buttons.dart';
 import 'package:rideshare/view/widgets/textfields.dart';
 
@@ -57,7 +60,7 @@ class Signup extends StatelessWidget {
                 color: AppColors.primarycolor,
                 text: AppStrings.SignUp,
                 onPressed: () {
-                  // Get.to(Signup());
+                  Get.to(SetPassword());
                 },
               ),
               const SizedBox(height: 5),

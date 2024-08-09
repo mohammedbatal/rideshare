@@ -168,16 +168,17 @@ class _FlexibleTextFieldState extends State<FlexibleTextField> {
       obscureText: widget.isPasswordField ? _obscureText : false,
       decoration: InputDecoration(
         hintText: widget.hintText,
+        hintStyle: TextStyle(color: AppColors.griyColor),
         prefixIcon: widget.isSearchField
-            ? Icon(Icons.search)
+            ? const Icon(Icons.search, color: AppColors.griyColor)
             : widget.prefixIcon != null
-                ? Icon(widget.prefixIcon)
+                ? Icon(widget.prefixIcon, color: AppColors.griyColor)
                 : null,
         suffixIcon: widget.isPasswordField
             ? IconButton(
                 icon: Icon(
-                  _obscureText ? Icons.visibility : Icons.visibility_off,
-                ),
+                    _obscureText ? Icons.visibility : Icons.visibility_off,
+                    color: AppColors.griyColor),
                 onPressed: () {
                   setState(() {
                     _obscureText = !_obscureText;
@@ -187,21 +188,21 @@ class _FlexibleTextFieldState extends State<FlexibleTextField> {
             : null,
         border: OutlineInputBorder(
           borderRadius: BorderRadius.circular(8),
-          borderSide: BorderSide(
+          borderSide: const BorderSide(
             color: Color(0xffD0D0D0),
             width: 1.5,
           ),
         ),
         enabledBorder: OutlineInputBorder(
           borderRadius: BorderRadius.circular(8),
-          borderSide: BorderSide(
+          borderSide: const BorderSide(
             color: Color(0xffD0D0D0),
             width: 1.5,
           ),
         ),
         focusedBorder: OutlineInputBorder(
           borderRadius: BorderRadius.circular(8),
-          borderSide: BorderSide(
+          borderSide: const BorderSide(
             color: Colors.blue,
             width: 2.0,
           ),

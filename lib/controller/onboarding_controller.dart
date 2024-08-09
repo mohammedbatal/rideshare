@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:rideshare/resources/static_onboarding.dart';
-import 'package:rideshare/view/screen/auth/login.dart';
+import 'package:rideshare/view/screen/auth/welcome.dart';
 
 abstract class OnboardingController extends GetxController {
   next();

@@ -3,6 +3,7 @@
 class AppStrings {
   // Onboarding
   static const String skip = 'Skip';
+  static const String EnterYourPassword = 'Enter Your Password';
   static const String or = 'or';
   static const String onboarding01Title = 'Anywhere you are';
   static const String onboarding01Content =
