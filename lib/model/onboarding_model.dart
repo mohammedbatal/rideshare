@@ -1,7 +1,7 @@
-class Onboarding {
+class OnboardingModel {
   final String? image;
   final String? title;
   final String? content;
 
-  Onboarding({this.image, this.title, this.content});
+  OnboardingModel({this.image, this.title, this.content});
 }

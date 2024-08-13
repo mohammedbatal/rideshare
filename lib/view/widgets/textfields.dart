@@ -231,8 +231,10 @@ class DropdownField extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return DropdownButtonFormField<String>(
+      
       value: options.contains(initialValue) ? initialValue : null,
       decoration: InputDecoration(
+        
         hintText: hintText,
         border: OutlineInputBorder(
           borderRadius: BorderRadius.circular(8),
@@ -261,6 +263,7 @@ class DropdownField extends StatelessWidget {
       },
       items: options.map<DropdownMenuItem<String>>((String value) {
         return DropdownMenuItem<String>(
+          
           value: value,
           child: Text(value),
         );

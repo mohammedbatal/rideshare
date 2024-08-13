@@ -3,18 +3,17 @@ import 'package:get/get.dart';
 import 'package:rideshare/resources/app_assets.dart';
 import 'package:rideshare/resources/app_colors.dart';
 import 'package:rideshare/resources/app_strings.dart';
-import 'package:rideshare/view/screen/auth/signup.dart';
+import 'package:rideshare/view/screen/auth/signup_screen.dart';
 import 'package:rideshare/view/widgets/buttons.dart';
 
-class Login extends StatelessWidget {
-  const Login({super.key});
+class Welcome extends StatelessWidget {
+  const Welcome({super.key});
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
         body: SafeArea(
       child: Column(
-        // mainAxisAlignment: MainAxisAlignment.center,
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
           Container(width: double.infinity),

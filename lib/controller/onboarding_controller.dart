@@ -15,7 +15,7 @@ class OnboardingControllerImp extends OnboardingController {
   next() {
     currentPage++;
     if (currentPage > onboardingList.length - 1) {
-      Get.to(Login());
+      Get.to(Welcome());
     } else {
       pageController.animateToPage(currentPage,
           duration: const Duration(milliseconds: 900), curve: Curves.easeInOut);

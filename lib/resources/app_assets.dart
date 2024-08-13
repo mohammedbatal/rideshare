@@ -6,10 +6,10 @@ class AppAssets {
   static const String onboarding1 = '${path}onboarding1.png';
   static const String onboarding2 = '${path}onboarding2.png';
   static const String onboarding3 = '${path}onboarding3.png';
-  static const String star = '${path}star';
-  static const String bike = '${path}bike';
-  static const String cycle = '${path}cycle';
-  static const String profile = '${path}profile';
+  static const String star = '${path}star.png';
+  static const String bike = '${path}bike.png';
+  static const String cycle = '${path}cycle.png';
+  static const String profile = '${path}profile.png';
   static const String welcome = '${path}welcome.png';
   static const String syria = '${path}syria.png';
   static const String gmail = '${path}Gmail.png';

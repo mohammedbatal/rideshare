@@ -1,6 +1,18 @@
 // ignore_for_file: constant_identifier_names
 
 class AppStrings {
+  // District
+  static const String District1AbuRomana = 'Abu Romana';
+  static const String District2Malki = 'Malki';
+  static const String District3MazzaSharqiya = 'Mazza Sharqiya';
+  static const String District4MazzaGharbiya = 'Mazza Gharbiya';
+  static const String District5NahrAisha = 'Nahr Aisha';
+  static const String District6Bebila = 'Bebila';
+  static const String District7Baramka = 'Baramka';
+  static const String District8Halabouni = 'Halabouni';
+  static const String District9Fahameh = 'Fahameh';
+  static const String District10Mahajreen = 'Mahajreen';
+
   // Onboarding
   static const String skip = 'Skip';
   static const String EnterYourPassword = 'Enter Your Password';
@@ -31,11 +43,13 @@ class AppStrings {
   static const String Back = 'Back';
   static const String Signupwithyouremail =
       'Sign up with your email or phone number';
+  static const String LoginWith = 'Login with your email';
   static const String Bysigningup =
       'By signing up. you agree to the Terms of service\nand Privacy policy.';
   static const String SignUp = 'Sign Up';
   static const String Signin = 'Sign in';
   static const String Name = 'Name';
+  static const String Password = 'Password';
   static const String Email = 'Email';
   static const String Yourmobilenumber = 'Your mobile number';
   static const String Gender = 'Gender';
@@ -55,6 +69,10 @@ class AppStrings {
   static const String Profile = 'Profile';
   static const String FullName = 'Full Name';
   static const String Street = 'Street';
+  static const String SY = 'SY';
+  static const String Aleppo = 'Aleppo';
+  static const String Damascus = 'Damascus';
+
   static const String City = 'City';
   static const String District = 'District';
   static const String Save = 'Save';
@@ -90,6 +108,7 @@ class AppStrings {
   static const String Car = 'Car';
   static const String Bike = 'Bike';
   static const String Cycle = 'Cycle';
+  static const String Cyclefound = 'Cycle found';
   static const String Taxi = 'Taxi';
   //23_select_avaiable_car
   static const String Avaiablecarsforride = 'Avaiable cars for ride';

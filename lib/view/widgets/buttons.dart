@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:rideshare/resources/app_colors.dart';
 
 abstract class CustomButton extends StatelessWidget {
   final String text;
@@ -45,15 +46,15 @@ class PrimaryButton extends CustomButton {
 }
 
 class SecondaryButton extends CustomButton {
-  SecondaryButton({required String text, required VoidCallback onPressed})
-      : super(text: text, onPressed: onPressed);
+  const SecondaryButton(
+      {super.key, required super.text, required super.onPressed});
 
   @override
   Widget build(BuildContext context) {
     return ElevatedButton(
       style: ElevatedButton.styleFrom(
-        backgroundColor: Color(0xff008955),
-        minimumSize: Size(172, 54),
+        backgroundColor: AppColors.primarycolor,
+        minimumSize: const Size(172, 54),
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(8),
         ),
@@ -61,7 +62,7 @@ class SecondaryButton extends CustomButton {
       onPressed: onPressed,
       child: Text(
         text,
-        style: TextStyle(
+        style: const TextStyle(
             color: Colors.white, fontSize: 16, fontWeight: FontWeight.w500),
       ),
     );
@@ -190,25 +191,25 @@ class DanButton extends CustomButton {
 }
 
 class SecondaryBut extends CustomButton {
-  SecondaryBut({required String text, required VoidCallback onPressed})
-      : super(text: text, onPressed: onPressed);
+  const SecondaryBut(
+      {super.key, required super.text, required super.onPressed});
 
   @override
   Widget build(BuildContext context) {
     return ElevatedButton(
       style: ElevatedButton.styleFrom(
         backgroundColor: Colors.white,
-        minimumSize: Size(165, 54),
+        minimumSize: const Size(165, 54),
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(8),
-          side: BorderSide(color: Color(0xff008955), width: 1),
+          side: const BorderSide(color: AppColors.primarycolor, width: 1),
         ),
       ),
       onPressed: onPressed,
       child: Text(
         text,
-        style: TextStyle(
-            color: Color(0xff008955),
+        style: const TextStyle(
+            color: AppColors.greenColor,
             fontSize: 16,
             fontWeight: FontWeight.w500),
       ),

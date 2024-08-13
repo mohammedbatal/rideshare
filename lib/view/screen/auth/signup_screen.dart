@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:get/get_core/src/get_main.dart';
 import 'package:rideshare/resources/app_assets.dart';
 import 'package:rideshare/resources/app_colors.dart';
 import 'package:rideshare/resources/app_strings.dart';
@@ -27,14 +26,16 @@ class Signup extends StatelessWidget {
                 AppStrings.Signupwithyouremail,
                 style: TextStyle(fontSize: 24, fontWeight: FontWeight.w500),
               ),
-              PrimaryTextField(controller: namecontroller, hintText: 'Name'),
+              PrimaryTextField(
+                  controller: namecontroller, hintText: AppStrings.Name),
               const SizedBox(height: 20),
-              PrimaryTextField(controller: emailcontroller, hintText: 'Email'),
+              PrimaryTextField(
+                  controller: emailcontroller, hintText: AppStrings.Email),
               const SizedBox(height: 20),
               PhoneNumberField(
                   controller: numbercontroller,
                   hintText: AppStrings.Yourmobilenumber,
-                  countryCodes: const ['SY', 'AR'],
+                  countryCodes: const ['SY'],
                   initialCountryCode: 'SY'),
               const SizedBox(height: 20),
               DropdownField(

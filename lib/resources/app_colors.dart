@@ -9,4 +9,7 @@ class AppColors {
   static const griyColor = Color.fromRGBO(160, 160, 160, 1);
   static const griyColortitle = Color.fromRGBO(65, 65, 65, 1);
   static const blueColor = Color.fromRGBO(48, 79, 254, 1);
+  static const greenColor = Color.fromRGBO(0, 137, 85, 1);
+  static const addresscolortitle = Color.fromRGBO(90, 90, 90, 1);
+  static const addresscolor = Color.fromRGBO(184, 184, 184, 1);
 }
