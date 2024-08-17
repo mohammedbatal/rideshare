@@ -2,10 +2,13 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:rideshare/view/screen/Location_screen.dart';
 import 'package:rideshare/view/screen/auth/login_screen.dart';
+import 'package:rideshare/view/screen/home/home_screen.dart';
+import 'package:rideshare/view/screen/offer_screen.dart';
 import 'package:rideshare/view/screen/onboarding.dart';
-import 'package:rideshare/view/screen/profile.dart';
+import 'package:rideshare/view/screen/profile_screen.dart';
 import 'package:rideshare/view/screen/avaiable_cycle.dart';
 import 'package:rideshare/view/screen/select_transport.dart';
+import 'package:rideshare/view/screen/thank_you_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -17,8 +20,8 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return GetMaterialApp(
-      home: SelectAvaiableCar(),
+    return const GetMaterialApp(
+      home: HomeScreen(),
     );
   }
 }

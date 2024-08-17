@@ -15,4 +15,5 @@ class AppAssets {
   static const String gmail = '${path}Gmail.png';
   static const String facebook = '${path}Facebook.png';
   static const String apple = '${path}Apple.png';
+  static const String car = '${path}car.png';
 }

@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:rideshare/resources/app_assets.dart';
+import 'package:get/get.dart';
 import 'package:rideshare/resources/app_colors.dart';
 import 'package:rideshare/resources/app_strings.dart';
+import 'package:rideshare/view/screen/cycle_details_screen.dart';
 import 'package:rideshare/view/widgets/listtile.dart';
 
 class SelectAvaiableCar extends StatelessWidget {
@@ -41,7 +42,13 @@ class SelectAvaiableCar extends StatelessWidget {
                 child: ListView.builder(
                   itemCount: number,
                   itemBuilder: (BuildContext context, int index) {
-                    return const ListtileAvaiableCycle();
+                    return ListtileAvaiableCycle(
+                      onPressed: () {
+                        Get.to(CycleDetails(nameCycle: 'BMW Cabrio'));
+                      },
+                      cycleName: 'BMW Cabrio',
+                      cycleDetails: 'Automatic   |   3 seats   |   Octane',
+                    );
                   },
                 ),
               )

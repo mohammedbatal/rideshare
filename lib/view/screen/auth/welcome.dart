@@ -3,6 +3,7 @@ import 'package:get/get.dart';
 import 'package:rideshare/resources/app_assets.dart';
 import 'package:rideshare/resources/app_colors.dart';
 import 'package:rideshare/resources/app_strings.dart';
+import 'package:rideshare/view/screen/auth/login_screen.dart';
 import 'package:rideshare/view/screen/auth/signup_screen.dart';
 import 'package:rideshare/view/widgets/buttons.dart';
 
@@ -49,7 +50,9 @@ class Welcome extends StatelessWidget {
           const SizedBox(height: 20),
           DangerButton(
             text: AppStrings.Loigin,
-            onPressed: () {},
+            onPressed: () {
+              Get.to(Login());
+            },
           )
         ],
       ),
